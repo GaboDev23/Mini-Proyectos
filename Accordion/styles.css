@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --header-bg: #5599cc44;
+    --default-text-color: #333;
+    --header-text-color: #555;;
+    --pink-text: #cc5599;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f1f1f1;
+    padding: 1rem;
+    color: var(--default-text-color);
+}
+
+.accordion {
+    width: 90%;
+    max-width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion .accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion .accordion-item .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+    position: relative;
+    align-items: center;
+    color: var(--header-text-color);
+}
+
+.accordion .accordion-item:last-child .accordion-header {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.accordion .accordion-item:first-child .accordion-header {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: background-color .7s;
+}
+
+.accordion .accordion-item .accordion-header::before {
+    content: '\25bc';
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-weight: 100;
+    text-align: center;
+    transition: transform .7s;
+}
+
+.accordion .accordion-item .active {
+    background-color: var(--header-bg);
+}
+
+.accordion .accordion-item .active::before {
+    transform: rotate(-180deg);
+}
+
+.accordion .accordion-item .accordion-collapse {
+    padding: 0;
+    font-size: 1rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: auto;
+    transition: max-height .5s, opacity 1s, padding .5s;
+}
+
+.accordion .accordion-item .opened {
+    padding: 1rem;
+    max-height: 200px;
+    opacity: 1;
+}
+
+.accordion .accordion-item .closed {
+    padding: 0;
+    max-height: 0;
+    opacity: 0;
+}
+
+.accordion .accordion-item .active + p {
+    padding: 1rem;
+    max-height: 200px;
+    opacity: 1;
+}
+
+.accordion .accordion-item .accordion-collapse .pink-text {
+    color: var(--pink-text);
+}
