@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.alert {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #DFF0D8;
+    color: #3C763D;
+    border-radius: 10px;
+    border: 3px solid #D6E9C6;
+}
+
+.success h2 {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.success p {
+    margin: 10px;
+}
+
+.success hr {
+    border-color: #3C763D;
+    border-top: none;
+}
