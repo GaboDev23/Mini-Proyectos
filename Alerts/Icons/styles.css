@@ -11,8 +11,26 @@
     border-radius: 5px;
 }
 
+.info {
+    background-color: #D1ECF1;
+    border: 1px solid #0C5460;
+    color: #0C5460;
+}
+
+.success {
+    background-color: #DFF0D8;
+    border: 1px solid #4F8A10;
+    color: #4F8A10;
+}
+
 .warning {
     background-color: #FFF3CD;
-    border: 1px solid #FFD700;
-    color: #856404;
+    border: 1px solid #9F6000;
+    color: #9F6000;
+}
+
+.danger {
+    background-color: #F8D7DA;
+    border: 1px solid #842029;
+    color: #842029;
 }
