@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.primary:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.secondary:hover {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.success:hover {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.danger:hover {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+.warning {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.warning:hover {
+    color: #fff;
+    background-color: #ffc107;
+}
+
+.info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.info:hover {
+    color: #fff;
+    background-color: #17a2b8;
+}
+
+.dark {
+    color: #343a40;
+    border-color: #343a40;
+}
+
+.dark:hover {
+    color: #fff;
+    background-color: #343a40;
+}
