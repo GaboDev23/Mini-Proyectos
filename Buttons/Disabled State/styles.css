@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    margin: 10px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    border: none;
+}
+
+.bg_primary[disabled] {
+    background-color: #007bff55;
+    color: #fff;
+}
+
+.bg_secondary[disabled] {
+    background-color: #6c757d55;
+    color: #fff;
+}
+
+.bd_primary[disabled] {
+    background-color: transparent;
+    color: #007bff55;
+    border: 1px solid #007bff55;
+}
+
+.bd_secondary[disabled] {
+    background-color: transparent;
+    color: #6c757d55;
+    border: 1px solid #6c757d55;
+}
