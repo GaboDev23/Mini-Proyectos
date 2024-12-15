@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin: 10px;
+}
+
+.btn-group label {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+    color: #eee;
+    border: 1px solid #48e;
+}
+
+.btn-group label:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.btn-group label:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.btn-group input {
+    display: none;
+}
+
+.btn-group label span {
+    color: #48e;
+}
+
+.btn-group label:has(input:checked), .btn-group label:has(input:checked) span {
+    background-color: #48e;
+    color: #fff;
+}
