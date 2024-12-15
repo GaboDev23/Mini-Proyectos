@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-toolbar {
+    margin: 10px auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-toolbar .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-toolbar .btn-group .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+
+.btn-toolbar .btn-group .btn-primary {
+    background-color: #48e;
+}
+
+.btn-toolbar .btn-group .btn-primary:first-child {
+    border-radius: 5px 0 0 5px;
+} 
+
+.btn-toolbar .btn-group .btn-primary:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.btn-toolbar .btn-group .btn-secondary:first-child {
+    border-radius: 5px 0 0 5px;
+} 
+
+.btn-toolbar .btn-group .btn-secondary:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.btn-toolbar .btn-group .btn-secondary:first-child {
+    border-radius: 5px 0 0 5px;
+} 
+
+.btn-toolbar .btn-group .btn-info {
+    border-radius: 5px;
+}
+
+.btn-toolbar .btn-group .btn-primary:hover, .btn-toolbar .btn-group .btn-secondary:hover, .btn-toolbar .btn-group .btn-info:hover {
+    transform: translateY(-3px);
+}
+
+.btn-toolbar .btn-group .btn-secondary {
+    background-color: #999;
+}
+
+.btn-toolbar .btn-group .btn-info {
+    background-color: #2cd;
+    color: #333;
+}
