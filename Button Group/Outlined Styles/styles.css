@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-group {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.btn-group .btn {
+    padding: 10px 20px;
+    border: 2px solid #48e;
+    background-color: transparent;
+    color: #48e;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-group .btn:first-child {
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+}
+
+.btn-group .btn:last-child {
+    border-radius: 0 5px 5px 0;
+    border-left: 0;
+}
+
+.btn-group .btn:hover {
+    background-color: #48e;
+    color: #fff;
+}
