@@ -104,3 +104,47 @@
 .btn-group-vertical .dropdown .dropdown-menu .dropdown-item:hover {
     background-color: #f5f5f5;
 }
+
+.btn-group-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 20%;
+    margin: 10px auto;
+}
+
+.btn-group-radio .btn {
+    border: 0;
+}
+
+.btn-group-radio .btn label {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid #48e;
+    background-color: #fff;
+    color: #48e;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.btn-group-radio .btn:first-child {
+    border-radius: 5px 5px 0 0;
+    border-bottom: 0;
+}
+
+.btn-group-radio .btn:last-child {
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+}
+
+.btn-group-radio .btn input {
+    display: none;
+}
+
+.btn-group-radio .btn:has(input:checked) label {
+    background-color: #48e;
+    color: #fff;
+}
+
