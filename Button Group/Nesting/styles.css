@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.container .btn:not(:last-child), .container .btn:last-child label {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.container .btn:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.container .dropdown label {
+    border-radius: 0 5px 5px 0;
+    position: relative;
+}
+
+.container label::after {
+    content: '\25BC';
+    margin-left: 5px;
+    font-size: .8rem;    
+}
+
+.container .btn:hover {
+    background-color: #0056b3;
+}
+
+.container .dropdown label {
+    width: 100%;
+}
+
+.container .dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    transition: max-height 0.3s;
+}
+
+.container .dropdown .dropdown-content .dropdown-button {
+    padding: 10px 20px;
+    text-align: left;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.container .dropdown .dropdown-content .dropdown-button:last-child {
+    border-bottom: none;
+}
+
+.container .dropdown .dropdown-content .dropdown-button:hover {
+    background-color: #f1f1f1;
+}
+
+.container .dropdown label input[type="checkbox"] {
+    display: none;
+}
+
+.container .dropdown label input[type="checkbox"]:checked ~ .dropdown-content {
+    max-height: 200px;
+}
